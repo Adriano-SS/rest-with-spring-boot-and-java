@@ -12,6 +12,7 @@ public class GreetingController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong(); //id mock por não ter BD.
 
+    //http://localhost:8080/gretting?name=adriano -> query params
     @RequestMapping("/greeting") //endpoint
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Greeting(counter.incrementAndGet(), String.format(template, name).toLowerCase());
