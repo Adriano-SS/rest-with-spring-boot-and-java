@@ -1,7 +1,5 @@
 package github.com.Adriano_SS.controllers.mathController.operations;
 
-import org.springframework.web.bind.annotation.PathVariable;
-
 public class SimpleOperations {
 
     public Double sum(Double numberOne, Double numberTwo) {
